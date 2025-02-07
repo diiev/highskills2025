@@ -75,4 +75,18 @@ def wave(txt):
 
     return lts
 
-print(wave('волна'))
+# print(wave('волна'))
+
+
+def get_rarename(lst):
+    names = {}
+    for name in lst:
+        if name in names:
+            names[name] +=1
+        else:
+            names[name] = 1
+    return 
+
+
+
+print(get_rarename(['Али', 'Иса', 'Иса', 'Алим', 'Ризван', 'Али']))
